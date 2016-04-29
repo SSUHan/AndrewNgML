@@ -119,11 +119,11 @@ pause;
 %  Your task is to complete the code in predict.m
 
 %  Predict probability for a student with score 45 on exam 1 
-%  and score 85 on exam 2 
+%  and score 85 on exam 2 '
 
-prob = sigmoid([1 65 65] * theta);
-fprintf(['For a student with scores 65 and 65, we predict an admission ' ...
-         'probability of %f\n20132429 이준수\n'], prob);
+prob = sigmoid([1 45 85] * theta);
+fprintf(['For a student with scores 45 and 85, we predict an admission ' ...
+         'probability of %f\n\n'], prob);
 
 % Compute accuracy on our training set
 p = predict(theta, X);
